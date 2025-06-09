@@ -50,20 +50,51 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     document.querySelector('.prev-btn').addEventListener('click', () => {
-        showSlide(currentSlide - 1);
+    showSlide(currentSlide - 1);
+});
+
+document.querySelector('.next-btn').addEventListener('click', () => {
+    showSlide(currentSlide + 1);
+});
+
+setInterval(() => {
+    showSlide(currentSlide + 1);
+}, 5000);
+
+showSlide(0);
+
+   window.onload = function() {
+    var modal = document.getElementById("callbackModal");
+    var btn = document.querySelector(".callback-btn");
+    var closeBtn = document.getElementsByClassName("close")[0];
+    var form = modal.querySelector("form"); // Получаем форму из модального окна
+
+    // Открытие модального окна при нажатии на кнопку
+    btn.addEventListener("click", function() {
+        modal.style.display = "block";
     });
-    
-    document.querySelector('.next-btn').addEventListener('click', () => {
-        showSlide(currentSlide + 1);
+
+    // Закрытие модального окна при нажатии на крестик
+    closeBtn.addEventListener("click", function() {
+        modal.style.display = "none";
     });
-    
-   
-    setInterval(() => {
-        showSlide(currentSlide + 1);
-    }, 5000);
-   
-    showSlide(0);
-    
+
+    // Закрытие модального окна при щелчке вне окна
+    window.addEventListener("click", function(event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+
+    // Отправка формы и вывод alert-сообщения
+    form.addEventListener("submit", function(e) {
+        e.preventDefault(); // Предотвращаем стандартную отправку формы
+        alert("Спасибо за вашу заявку! Мы свяжемся с вами в ближайшее время.");
+        modal.style.display = "none"; // Закроем модальное окно после успешной отправки
+    });
+};
+
+
  
     const filterButtons = document.querySelectorAll('.filter-btn');
     const propertyCards = document.querySelectorAll('.property-card');
