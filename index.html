@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Estate - Агентство недвижимости</title>
+   <link rel="icon" href="C:\Users\Asus\Desktop\практика 29.05.25/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><span> Real Estate</span></h1>
+                <p>Ваш надежный партнер в мире недвижимости</p>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home" class="active">Главная</a></li>
+                    <li><a href="#about">О компании</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#properties">Недвижимость</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header-contacts">
+                <p><i class="fas fa-phone"></i> +7 (123) 456-78-90</p>
+                <button class="btn callback-btn">Заказать звонок</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <h2>Найдите свой идеальный дом</h2>
+            <p>Более 1000 объектов недвижимости по всей стране</p>
+            <form class="search-form">
+                <select>
+                    <option value="">Тип недвижимости</option>
+                    <option value="apartment">Квартира</option>
+                    <option value="house">Дом</option>
+                    <option value="land">Земельный участок</option>
+                    <option value="commercial">Коммерческая</option>
+                </select>
+                <select>
+                    <option value="">Город</option>
+                    <option value="moscow">Москва</option>
+                    <option value="spb">Санкт-Петербург</option>
+                    <option value="kazan">Казань</option>
+                    <option value="sochi">Сочи</option>
+                </select>
+                <input type="text" placeholder="Бюджет (руб)">
+                <button type="submit" class="btn">Найти</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="container">
+            <h2 class="section-title">О нашей компании</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Real Estate - это ведущее агентство недвижимости, работающее на рынке с 2005 года. Мы специализируемся на продаже, покупке и аренде жилой и коммерческой недвижимости.</p>
+                    <p>Наша команда состоит из профессиональных риелторов с многолетним опытом работы, которые помогут вам найти идеальное решение для ваших нужд.</p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> Более 15 лет на рынке</li>
+                        <li><i class="fas fa-check"></i> 1000+ довольных клиентов</li>
+                        <li><i class="fas fa-check"></i> Полное юридическое сопровождение</li>
+                        <li><i class="fas fa-check"></i> Индивидуальный подход к каждому клиенту</li>
+                    </ul>
+                </div>
+                <div class="about-carousel">
+                    <div class="carousel-container">
+                        <div class="carousel-slide">
+                            <img src="https://avatars.mds.yandex.net/get-altay/5459048/2a000001801a7da6daf4744d94a70824260c/XXL_height" alt="Наш офис">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://avatars.mds.yandex.net/i?id=9880c012cfb096a0f0b8e1f0d2b24ef6_l-5391229-images-thumbs&n=13" alt="Наша команда">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://shkolavoznesenovskayaivnyanskij-r31.gosweb.gosuslugi.ru/netcat_files/149/2412/Shkol_nyy_sportivnyy_klub_Yunior.jpg" alt="Награды">
+                        </div>
+                    </div>
+                    <button class="carousel-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="carousel-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section" id="services">
+        <div class="container">
+            <h2 class="section-title">Наши услуги</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Продажа недвижимости</h3>
+                    <p>Поможем быстро и выгодно продать вашу недвижимость по максимальной цене.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search-dollar"></i>
+                    </div>
+                    <h3>Покупка недвижимости</h3>
+                    <p>Подберем оптимальные варианты, соответствующие вашим требованиям и бюджету.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3>Юридическое сопровождение</h3>
+                    <p>Полный комплекс юридических услуг при совершении сделок с недвижимостью.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Аренда коммерческой недвижимости</h3>
+                    <p>Подбор помещений для бизнеса: офисы, магазины, склады, рестораны.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Ипотечное консультирование</h3>
+                    <p>Помощь в подборе и оформлении ипотечных программ от ведущих банков.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Инвестиции в недвижимость</h3>
+                    <p>Консультации по выгодным инвестициям в объекты недвижимости.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-properties" id="properties">
+        <div class="container">
+            <h2 class="section-title">Популярные предложения</h2>
+            <div class="properties-filter">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="apartment">Квартиры</button>
+                <button class="filter-btn" data-filter="house">Дома</button>
+                <button class="filter-btn" data-filter="commercial">Коммерческая</button>
+            </div>
+            <div class="properties-grid">
+                <div class="property-card" data-category="apartment">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Квартира">
+                        <span class="property-badge">Новое</span>
+                    </div>
+                    <div class="property-details">
+                        <h3>3-комн. квартира в центре</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Москва, ул. Тверская</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-ruler-combined"></i> 85 м²</span>
+                            <span><i class="fas fa-bed"></i> 3</span>
+                            <span><i class="fas fa-bath"></i> 2</span>
+                        </div>
+                        <div class="property-price">15 000 000 ₽</div>
+                        <button class="btn property-btn">Подробнее</button>
+                    </div>
+                </div>
+                <div class="property-card" data-category="house">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Дом">
+                    </div>
+                    <div class="property-details">
+                        <h3>Загородный дом с участком</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Московская обл.</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-ruler-combined"></i> 150 м²</span>
+                            <span><i class="fas fa-bed"></i> 4</span>
+                            <span><i class="fas fa-tree"></i> 10 сот.</span>
+                        </div>
+                        <div class="property-price">25 000 000 ₽</div>
+                        <button class="btn property-btn">Подробнее</button>
+                    </div>
+                </div>
+                <div class="property-card" data-category="commercial">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Офис">
+                        <span class="property-badge">Скидка</span>
+                    </div>
+                    <div class="property-details">
+                        <h3>Офисное помещение</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Санкт-Петербург, Невский пр.</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-ruler-combined"></i> 120 м²</span>
+                            <span><i class="fas fa-building"></i> 2 этаж</span>
+                        </div>
+                        <div class="property-price">30 000 000 ₽</div>
+                        <button class="btn property-btn">Подробнее</button>
+                    </div>
+                </div>
+                            
+                <div class="property-card" data-category="apartment">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Квартира">
+                    </div>
+                    <div class="property-details">
+                        <h3>2-комн. квартира</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Казань, ул. Баумана</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-ruler-combined"></i> 65 м²</span>
+                            <span><i class="fas fa-bed"></i> 2</span>
+                            <span><i class="fas fa-bath"></i> 1</span>
+                        </div>
+                        <div class="property-price">8 500 000 ₽</div>
+                        <button class="btn property-btn">Подробнее</button>
+                    </div>
+                </div>
+
+               
+                <div class="property-card" data-category="apartment">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Квартира">
+                    </div>
+                    <div class="property-details">
+                        <h3>3-комн. квартира</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Москва, Ленинский проспект</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-ruler-combined"></i> 90 м²</span>
+                            <span><i class="fas fa-bed"></i> 3</span>
+                            <span><i class="fas fa-bath"></i> 2</span>
+                        </div>
+                        <div class="property-price">15 000 000 ₽</div>
+                        <button class="btn property-btn">Подробнее</button>
+                    </div>
+                </div>
+
+                
+                <div class="property-card" data-category="apartment">
+                    <div class="property-image">
+                        <img src="https://avatars.mds.yandex.net/get-metarealty/14885776/30a6684c-7e75-4ab3-a1cf-08c9e364c056/XXL_height" alt="Квартира">
+                    </div>
+                    <div class="property-details">
+                        <h3>1-комн. квартира</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Екатеринбург, ул. Малышева</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-ruler-combined"></i> 45 м²</span>
+                            <span><i class="fas fa-bed"></i> 1</span>
+                            <span><i class="fas fa-bath"></i> 1</span>
+                        </div>
+                        <div class="property-price">5 000 000 ₽</div>
+                        <button class="btn property-btn">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+
+
+                
+                               
+                
+            <div class="view-all">
+                <button class="btn view-all-btn">Смотреть все предложения</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">Отзывы наших клиентов</h2>
+            <div class="testimonials-container">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Благодарю агентство Real Estate за профессиональный подход к работе. Помогли продать квартиру быстро и по хорошей цене. Все документы были оформлены грамотно, без каких-либо проблем."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://img-s.wfolio.com/x/Erhj60RfGoSDn6LYN1vjjvKUII7A2DQI/j16a8uf00kvZEZrJR_efEuYFDLTbJMyD/mzn-8VA63r8ptewJBMdybHABP-T5Hly7/q3KiYB3I9nNGEh6MVOioOUCrHOmQlr20.jpg" alt="Ольга Иванова">
+                        <div>
+                            <h4>Ольга Иванова</h4>
+                            <p>Продажа квартиры</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Искали квартиру для семьи более полугода самостоятельно, но безрезультатно. Обратились в Real Estate и через 2 недели уже переезжали в новую квартиру, которая полностью соответствовала нашим требованиям."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://api.chatkeeper.app/avatar/chat/chat-1001125577467.jpeg" alt="Дмитрий Смирнов">
+                        <div>
+                            <h4>Дмитрий Смирнов</h4>
+                            <p>Покупка квартиры</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Готовы найти свой идеальный дом?</h2>
+                <p>Оставьте заявку и наш специалист свяжется с вами в течение 15 минут</p>
+                <button class="btn cta-btn" onclick="openModal()">Оставить заявку</button>
+            </div>
+        </div>
+     </section>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Заявка на консультацию</h2>
+                <form role="form" autocomplete="off" method="POST">
+                    <label for="nameReq">Имя:</label>
+                    <input type="text" name="nameReq" required placeholder="Иван">
+                    
+                    <label for="lastNameReq">Фамилия:</label>
+                    <input type="text" name="lastNameReq" required placeholder="Иванов">
+                    
+                    <label for="telReq">Телефон:</label>
+                    <input type="tel" name="telReq" required placeholder="+7 (___) ___ __ __">
+                    
+                    <button type="submit" class="btn btn-success">Отправить</button>
+                </form>
+            </div>
+        </div>
+   
+    <section class="contact-section" id="contacts">
+        <div class="container">
+            <h2 class="section-title">Контакты</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Адрес</h3>
+                            <p>г. Москва, ул. Тверская, д. 10, офис 45</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Телефон</h3>
+                            <p>+7 (123) 456-78-90</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@primeestate.ru</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Режим работы</h3>
+                            <p>Пн-Пт: 9:00 - 20:00<br>Сб-Вс: 10:00 - 18:00</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Real Estate</h3>
+                    <p>Ваш надежный партнер в мире недвижимости. Мы помогаем людям находить свой идеальный дом с 2005 года.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Меню</h3>
+                    <ul>
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#about">О компании</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#properties">Недвижимость</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Услуги</h3>
+                    <ul>
+                        <li><a href="#">Продажа недвижимости</a></li>
+                        <li><a href="#">Покупка недвижимости</a></li>
+                        <li><a href="#">Аренда</a></li>
+                        <li><a href="#">Юридические услуги</a></li>
+                        <li><a href="#">Ипотека</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Подписаться на рассылку</h3>
+                    <p>Будьте в курсе новых предложений</p>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Ваш email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Real Estate. Все права защищены.</p>
+                <div class="footer-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Пользовательское соглашение</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
