@@ -25,10 +25,25 @@
                 </ul>
             </nav>
             <div class="header-contacts">
-                <p><i class="fas fa-phone"></i> +7 (123) 456-78-90</p>
-                <button class="btn callback-btn">Заказать звонок</button>
+            <p><i class="fas fa-phone"></i> +7 (123) 456-78-90</p>
+            <!-- Используем data-атрибут для привязки к модальному окну -->
+            <button class="btn callback-btn" data-toggle="modal" data-target="#callbackModal">Заказать звонок</button>
+        </div>
+
+        <!-- Модальное окно -->
+        <div id="callbackModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Оставьте заявку на обратный звонок:</h2>
+                <form action="/submit.php" method="post">
+                    <input type="text" placeholder="Имя" required />
+                    <input type="tel" placeholder="Телефон" required />
+                    <textarea placeholder="Комментарий (необязательно)" rows="4"></textarea>
+                    <button type="submit">Отправить</button>
+                </form>
             </div>
         </div>
+
     </header>
 
     <section class="hero" id="home">
@@ -295,34 +310,7 @@
             </div>
         </div>
     </section>
-        <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Готовы найти свой идеальный дом?</h2>
-                <p>Оставьте заявку и наш специалист свяжется с вами в течение 15 минут</p>
-                <button class="btn cta-btn" onclick="openModal()">Оставить заявку</button>
-            </div>
-        </div>
-     </section>
-
-        <div id="myModal" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <h2>Заявка на консультацию</h2>
-                <form role="form" autocomplete="off" method="POST">
-                    <label for="nameReq">Имя:</label>
-                    <input type="text" name="nameReq" required placeholder="Иван">
-                    
-                    <label for="lastNameReq">Фамилия:</label>
-                    <input type="text" name="lastNameReq" required placeholder="Иванов">
-                    
-                    <label for="telReq">Телефон:</label>
-                    <input type="tel" name="telReq" required placeholder="+7 (___) ___ __ __">
-                    
-                    <button type="submit" class="btn btn-success">Отправить</button>
-                </form>
-            </div>
-        </div>
+    
    
     <section class="contact-section" id="contacts">
         <div class="container">
@@ -358,10 +346,17 @@
                         </div>
                     </div>
                 </div>
-                
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.373789089038!2d37.6153103159309!3d55.75202398055313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a50b315e573%3A0xa886bf5a3d9b2e68!2z0YPQuy4g0KLQtdGF0L3QvtC70L7Qs9C4LCAxMCwg0JzQvtGB0LrQstCwLCAxMjMwMDI!5e0!3m2!1sru!2sru!4v1620000000000!5m2!1sru!2sru" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
             </div>
         </div>
     </section>
+                
+    </section>
+
 
     <footer class="footer">
         <div class="container">
@@ -372,8 +367,8 @@
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-vk"></i></a>
-                        <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                        <a href=" https://templatica.pro"><i class="fab fa-vk"></i></a>
+                        <a href="https://t.me/makety_saitov_figma"><i class="fab fa-telegram-plane"></i></a>
                     </div>
                 </div>
                 <div class="footer-column">
